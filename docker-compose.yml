@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  front:
+    image: nabecima/vue
+    ports:
+      - 3000:3000
+    privileged: true
+    volumes:
+      - .:/app:cached
+    tty: true
+    stdin_open: true
+    command: yarn run dev

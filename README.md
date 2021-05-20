@@ -18,7 +18,7 @@ docker-compose run --rm front yarn create nuxt-app <app_name>
 ```
 mv docker-compose.yml ./<app_name>/
 cd <app_name>
-docker-compose up
+docker-compose up -d
 ```
 
 `localhost:3000`にて確認可能
